@@ -28,12 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            txtName = new TextBox();
+            BtnDisplayGreeting = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(54, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(98, 15);
+            label1.TabIndex = 5;
+            label1.Text = "Write your name!";
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(17, 48);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(187, 23);
+            txtName.TabIndex = 4;
+            // 
+            // BtnDisplayGreeting
+            // 
+            BtnDisplayGreeting.Location = new Point(45, 111);
+            BtnDisplayGreeting.Name = "BtnDisplayGreeting";
+            BtnDisplayGreeting.Size = new Size(120, 57);
+            BtnDisplayGreeting.TabIndex = 3;
+            BtnDisplayGreeting.Text = "Display Greeting";
+            BtnDisplayGreeting.UseVisualStyleBackColor = true;
+            BtnDisplayGreeting.Click += BtnDisplayGreeting_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(222, 222);
+            Controls.Add(label1);
+            Controls.Add(txtName);
+            Controls.Add(BtnDisplayGreeting);
+            Name = "Form1";
+            Text = "Branching Practice";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox txtName;
+        private Button BtnDisplayGreeting;
     }
 }

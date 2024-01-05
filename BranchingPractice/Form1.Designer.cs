@@ -41,7 +41,7 @@
             btnDisplayGreeting.TabIndex = 0;
             btnDisplayGreeting.Text = "Display Greeting";
             btnDisplayGreeting.UseVisualStyleBackColor = true;
-            btnDisplayGreeting.Click += btnDisplayGreeting_Click;
+            btnDisplayGreeting.Click += BtnDisplayGreeting_Click;
             // 
             // txtName
             // 
